@@ -3,18 +3,34 @@
 }
 
 .video-card {
-  width: 560px;
-  height: 315px;
+  width: 896px;
+  height: 504px;
+  margin: 0 auto;
 }
 
-.mdl-layout__header {
-  color: #fff;
+.list-card {
+  width: 100%;
+  max-width: 896px;
+  margin: 0 auto;
 }
 
-.mdl-layout__header .mdl-layout__drawer-button {
-  color: #fff;
+.list-card h2 {
+  margin-top: 0;
+  padding: 0 16px;
 }
 
+h1 {
+  text-align: center;
+}
+
+.mdl-layout__header,
+.mdl-layout__header .mdl-layout__drawer-button,
 .mdl-layout__header .mdl-navigation .mdl-navigation__link {
   color: #fff;
+  transition: color 0.2s ease-in;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button:hover,
+.mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
+  color: #FFEB3B;
 }
