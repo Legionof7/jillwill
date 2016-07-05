@@ -21,6 +21,22 @@
 
 h1 {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1 .type-input-container {
+  width: 320px;
+  border-bottom: 1px dashed #333;
+  text-align: left;
+}
+
+h1 .type-input {
+  font-family: 'Covered By Your Grace', cursive;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  animation: type 3s steps(60, end) infinite;
 }
 
 .mdl-layout__header,
@@ -33,4 +49,18 @@ h1 {
 .mdl-layout__header .mdl-layout__drawer-button:hover,
 .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
   color: #FFEB3B;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  40% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
